@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.*;
 
-//Stream map(function)
+//Stream map(function)//we use map to do some Buisseness logic
 class Stream2
 {
 	public static void main(String ar[])
