@@ -9,6 +9,6 @@ System.out.println(name);
 public static String getName(int id)
 {
 	// getting Name from db
-return "Ram";
+return null;
 }
 }
