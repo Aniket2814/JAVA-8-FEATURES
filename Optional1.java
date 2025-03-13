@@ -1,14 +1,23 @@
+import java.util.*;
 class Optional1
 {
 public static void main(String ar[])
 {
-String name=getName(1);
-System.out.println(name);
+Optional<String> name=getName(1);
+if(name.isPresent())
+{
+	System.out.println(name.get());
+}
+// ifPresent//ka paramteer hota Hai consumer type ka 
+
+name.ifPresent(x->System.out.println(x));
+// System.out.println(name);
 
 }
-public static String getName(int id)
+public static Optional<String> getName(int id)
 {
 	// getting Name from db
-return null;
+	String name="ram";
+return Optional.of(name);
 }
 }
